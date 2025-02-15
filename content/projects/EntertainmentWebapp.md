@@ -1,13 +1,13 @@
 ---
 date: '2021-05-21'
-title: '365 Entertainment Movie WebApp'
-github: 'https://github.com/yashitanamdeo/365-entertainment-Movie-Webapp'
-external: 'https://yashitanamdeo.github.io/365-entertainment-Movie-Webapp/'
+title: '🕵 API covid'
+github: 'https://github.com/KaterinT/API_COVID'
+external: 'https://katerint.github.io/API_COVID/'
 tech:
-  - HTML
-  - CSS
-  - Javascript
-company: 'Suven'
+  - Bootstrap5 
+  - JavaScript 
+  - HTML5
+company: 'Owner'
 showInProjects: true
 ---
 

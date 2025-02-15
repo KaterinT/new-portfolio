@@ -26,7 +26,7 @@ const Head = ({ metadata }) => (
       {metadata.title}
     </title>
     <link rel="shortcut icon" href={favicon} />
-    <link rel="canonical" href="http://yashitanamdeo.github.io/" />
+    <link rel="canonical" href="https://tellourakaterin.netlify.app/" />
 
     <meta name="description" content={metadata.description} />
     <meta name="keywords" content={config.siteKeywords} />
@@ -52,7 +52,8 @@ const Head = ({ metadata }) => (
     <meta name="twitter:description" content={metadata.description} />
     <meta name="twitter:image" content={`${config.siteUrl}${ogImage}`} />
     <meta name="twitter:image:alt" content={metadata.title} />
-
+    <meta prefix="og: http://ogp.me/ns#" />
+    
     <link rel="apple-touch-icon" sizes="57x57" href={appleIcon57x57} />
     <link rel="apple-touch-icon" sizes="60x60" href={appleIcon60x60} />
     <link rel="apple-touch-icon" sizes="72x72" href={appleIcon72x72} />

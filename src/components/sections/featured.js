@@ -78,7 +78,7 @@ const StyledTechList = styled.ul`
   li {
     font-family: ${fonts.SFMono};
     font-size: ${fontSizes.smish};
-    color: ${colors.green};
+    color: ${colors.lightSlate};
     margin-right: ${theme.margin};
     margin-bottom: 7px;
     white-space: nowrap;
@@ -121,6 +121,7 @@ const StyledFeaturedImg = styled(Img)`
     filter: grayscale(100%) contrast(1) brightness(80%);
   `};
 `;
+
 const StyledImgContainer = styled.a`
   ${mixins.boxShadow};
   grid-column: 6 / -1;
@@ -275,7 +276,20 @@ const Featured = ({ data }) => {
                   href={external ? external : github ? github : '#'}
                   target="_blank"
                   rel="nofollow noopener noreferrer">
-                  <StyledFeaturedImg fluid={cover.childImageSharp.fluid} alt={title} />
+                  {/* <StyledFeaturedImg fluid={cover.childImageSharp.fluid } alt={title} /> */}
+                  {cover.childImageSharp ? (
+                    <StyledFeaturedImg fluid={cover.childImageSharp.fluid} alt={title} />
+                  ) : (
+                    <img
+                      src={cover.publicURL}
+                      alt={title}
+                      style={{
+                        width: '100%',
+                        height: 'auto',
+                        mixBlendMode: 'multiply',
+                      }}
+                    />
+                  )}
                 </StyledImgContainer>
               </StyledProject>
             );

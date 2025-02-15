@@ -155,6 +155,8 @@ const StyledJobDetails = styled.h5`
 `;
 
 const Jobs = ({ data }) => {
+
+  
   const [activeTabId, setActiveTabId] = useState(0);
   const [tabFocus, setTabFocus] = useState(null);
   const tabs = useRef([]);
@@ -199,11 +201,12 @@ const Jobs = ({ data }) => {
       <StyledTabs>
         <StyledTabList role="tablist" aria-label="Job tabs" onKeyDown={e => onKeyPressed(e)}>
           {data &&
-            data.map(({ node }, i) => {
+            data.slice(1).map(({ node }, i) => {
               const { company } = node.frontmatter;
               return (
                 <li key={i}>
                   <StyledTabButton
+                  
                     isActive={activeTabId === i}
                     onClick={() => setActiveTabId(i)}
                     ref={el => (tabs.current[i] = el)}
@@ -221,7 +224,7 @@ const Jobs = ({ data }) => {
         </StyledTabList>
 
         {data &&
-          data.map(({ node }, i) => {
+          data.slice(1).map(({ node }, i) => {
             const { frontmatter, html } = node;
             const { title, url, company, range } = frontmatter;
             return (

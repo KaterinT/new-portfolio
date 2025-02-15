@@ -109,7 +109,7 @@ const ArchivePage = ({ location, data }) => {
   return (
     <Layout location={location}>
       <Helmet>
-        <title>Archive | Yashita Namdeo</title>
+        <title>Archive | Katerin Tello</title>
         <link rel="canonical" href="https://brittanychiang.com/archive" />
       </Helmet>
 
@@ -144,7 +144,7 @@ const ArchivePage = ({ location, data }) => {
                         {company ? <span>{company}</span> : <span>—</span>}
                       </td>
 
-                      <td className="tech hide-on-mobile">
+                      {/* <td className="tech hide-on-mobile">
                         {tech.length > 0 &&
                           tech.map((item, i) => (
                             <span key={i}>
@@ -153,7 +153,19 @@ const ArchivePage = ({ location, data }) => {
                               {i !== tech.length - 1 && <span className="separator">&middot;</span>}
                             </span>
                           ))}
+                      </td> */}
+                      <td className="tech hide-on-mobile">
+                        {tech && tech.length > 0 && // Verifica si tech existe y tiene elementos
+                          tech.map((item, i) => (
+                            <span key={i}>
+                              {item}
+                              {''}
+                              {i !== tech.length - 1 && <span className="separator">&middot;</span>}
+                            </span>
+                          ))
+                        }
                       </td>
+
 
                       <td className="links">
                         <span>

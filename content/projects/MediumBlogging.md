@@ -1,14 +1,14 @@
 ---
 date: '2021-05-23'
-title: 'Medium Blogging'
-github: 'https://github.com/yashitanamdeo/Medium-Blogging'
-external: 'https://yashitanamdeo.github.io/Medium-Blogging/'
+title: '🎥 Quizz App'
+github: 'https://github.com/KaterinT/quizzApp'
+external: 'https://katerint.github.io/quizzApp/'
 tech:
-  - HTML
-  - CSS
-  - Javascript
-company: 'Suven'
+  - HTML5 
+  - CSS3 
+  - JavaScript
+company: 'Laboratoria'
 showInProjects: true
 ---
 
-Project 2 under Suven Coding Internship.
+📽 It's a trivia game about Asian and American movies. The total score is displayed at the end of the quiz.

@@ -1,10 +1,14 @@
 ---
 title: 'Hello, my name is'
-name: 'Yashita Namdeo'
-subtitle: 'I love exploring new things!'
+name: 'Katerin Tello'
+subtitle: 'I build things for the web,  
+
+
+
+I create experiences'
 buttonText: 'Get In Touch'
 ---
 
-I'm a Final Year Computer Science Engineering Student at SVVV, Indore. Primarily interested in Web Development and Data Science.
+I am a web developer with a strong interest in creating innovative solutions by implementing Artificial Intelligence and improving security controls.
 
-I enjoy learning new skills and implementing them in real life!
+I’m passionate about learning new skills and applying them to real-world situations.

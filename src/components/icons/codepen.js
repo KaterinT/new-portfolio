@@ -14,4 +14,4 @@ const IconCodepen = () => (
   </svg>
 );
 
-export default IconCodepen;
+// export default IconCodepen;

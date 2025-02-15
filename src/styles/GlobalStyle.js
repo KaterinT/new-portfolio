@@ -43,7 +43,7 @@ const GlobalStyle = createGlobalStyle`
       #root > #content > * {
         filter: blur(5px) brightness(0.7);
         transition: ${theme.transition};
-        pointer-events: none;
+        // pointer-events: none;
         user-select: none;
       }
     }
@@ -114,7 +114,8 @@ const GlobalStyle = createGlobalStyle`
     display: inline-block;
     text-decoration: none;
     text-decoration-skip-ink: auto;
-    color: inherit;
+    // color: inherit;
+    color: #a8b2d1;
     position: relative;
     transition: ${theme.transition};
     cursor: pointer;

@@ -1,16 +1,15 @@
 ---
 date: '2021-05-15'
-title: 'Covid-19 Vaccine Analysis'
-github: 'https://github.com/yashitanamdeo/Covid19_Vaccine_Analysis'
-external: 'https://github.com/yashitanamdeo/Covid19_Vaccine_Analysis/blob/main/Covid19_Vaccine_Analysis.ipynb'
+title: '🌍🔥Wildfire Tracker🚀'
+github: 'https://github.com/KaterinT/wildfiretracker'
+external: 'https://katerint.github.io/wildfiretracker/'
 tech:
-  - Python
-  - Numpy
-  - Pandas
-  - Matplotlib
-  - Seaborn
+  - React JS 
+  - Javascript 
+  - API 
+  - Fetch-api
 company: ''
 showInProjects: true
 ---
 
-Analyzed how many vaccines each country is using to fight covid-19.
+🚒🔥 In this project, I developed an interactive map to track wildfires around the world. The application integrates NASA's open API 🚀 and Google Maps API 🔍🌍 to provide accurate and real-time information.

@@ -1,13 +1,14 @@
 ---
 date: '2021-05-31'
-title: 'CSS Animation WebApp'
-github: 'https://github.com/yashitanamdeo/CSS-Animation-WebApp'
-external: 'https://yashitanamdeo.github.io/CSS-Animation-WebApp/'
+title: '💳🔐Card Validation'
+github: 'https://github.com/KaterinT/LIM016-card-validation'
+external: 'https://katerint.github.io/LIM016-card-validation/'
 tech:
-  - HTML
-  - CSS
-company: 'Suven'
+  - HTML5 
+  - CSS3 
+  - JavaScript
+company: 'Laboratoria'
 showInProjects: true
 ---
 
-Project 3 under HTML-CSS Suven Coding Internship
+📌 This project consists of an e-commerce store specializing in technology products 💻. Designed to be comfortable, simple, and intuitive, it allows users to successfully complete their purchase process 🛒, validating their card quickly, securely, and reliably 💳🔐✅.

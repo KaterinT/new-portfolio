@@ -1,13 +1,13 @@
 ---
 date: '2021-05-18'
-title: 'Image Processing in Python'
-github: 'https://github.com/yashitanamdeo/Image-Processing-Python'
-external: 'https://github.com/yashitanamdeo/Image-Processing-Python/blob/main/Image_Processing.ipynb'
+title: 'Drink Water'
+github: 'https://github.com/KaterinT/drinkWater'
+external: 'https://katerint.github.io/drinkWater/'
 tech:
-  - Python
-  - Numpy
-  - OpenCV
+  - HTML5 
+  - CSS3 
+  - JavaScript
 showInProjects: true
 ---
 
-Image Processing of different images in Python.
+It's an app designed to help you easily and quickly calculate the amount of water you consume with each 250 ml glass. This project focuses on highlighting the importance of maintaining proper daily water intake.

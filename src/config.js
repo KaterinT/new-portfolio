@@ -1,38 +1,38 @@
 module.exports = {
-  siteTitle: 'Yashita Namdeo',
+  siteTitle: 'Katerin Tello',
   siteDescription:
-    'Yashita Namdeo is an incoming Software Developer, based in India, who loves learning new things and helping tech beginners.',
+    'Katerin Tello is an enthusiastic Web Developer based in Australia, passionate about exploring new technologies for development and analysis',
   siteKeywords:
-    'Yashita Namdeo, Yashita, Namdeo, yashitanamdeo, software engineer, web developer, javascript, python, java, svvv, indore',
-  siteUrl: 'https://yashitanamdeo.github.io/',
+    'Katerin Tello, Katerin, Tello, katerintello, software engineer, web developer, javascript, python, java, svvv, indore',
+  siteUrl: 'https://katerintello.github.io/',
   siteLanguage: 'en_US',
   googleAnalyticsID: 'UA-45666519-2',
   googleVerification: 'DCl7VAf9tcz6eD9gb67NfkNnJ1PKRNcg8qQiwpbx9Lk',
-  name: 'Yashita Namdeo',
-  location: 'Indore, India',
-  email: 'yashita.namdeo2000@gmail.com',
-  github: 'https://github.com/yashitanamdeo',
+  name: 'Katerin Tello',
+  location: 'Lima, Peru',
+  email: 'tellourakaterin@gmail.com',
+  github: 'https://github.com/KaterinT',
   twitterHandle: '@',
   socialMedia: [
     {
       name: 'GitHub',
-      url: 'https://github.com/yashitanamdeo',
+      url: 'https://github.com/KaterinT',
     },
     {
       name: 'Linkedin',
-      url: 'https://www.linkedin.com/in/yashitanamdeo/',
+      url: 'https://www.linkedin.com/in/katerin-tello-ura/',
     },
-    {
-      name: 'Codepen',
-      url: 'https://codepen.io/yashitanamdeo',
-    },
+    // {
+    //   name: 'Codepen',
+    //   url: 'https://codepen.io/#',
+    // },
     {
       name: 'Instagram',
-      url: 'https://www.instagram.com/yashitanamdeo',
+      url: 'https://www.instagram.com/katerintll/',
     },
     {
       name: 'Twitter',
-      url: 'https://twitter.com/',
+      url: 'https://x.com/urtkate7',
     },
   ],
 
@@ -61,6 +61,7 @@ module.exports = {
     green: '#64ffda',
     navy: '#0a192f',
     darkNavy: '#020c1b',
+    lightSlate: '#a8b2d1',
   },
 
   srConfig: (delay = 200) => ({

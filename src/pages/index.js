@@ -1,7 +1,7 @@
 import React from 'react';
 import { graphql } from 'gatsby';
 import PropTypes from 'prop-types';
-import { Layout, Hero, About, Jobs, Featured, Projects, Contact } from '@components';
+import { Layout, Hero, About, Jobs, Featured, Projects, Contact, ParticleCursor } from '@components';
 import styled from 'styled-components';
 import { Main } from '@styles';
 
@@ -10,7 +10,9 @@ const StyledMainContainer = styled(Main)`
 `;
 
 const IndexPage = ({ location, data }) => (
+  
   <Layout location={location}>
+    <ParticleCursor />
     <StyledMainContainer className="fillHeight">
       <Hero data={data.hero.edges} />
       <About data={data.about.edges} />
@@ -19,6 +21,7 @@ const IndexPage = ({ location, data }) => (
       <Projects data={data.projects.edges} />
       <Contact data={data.contact.edges} />
     </StyledMainContainer>
+    
   </Layout>
 );
 
@@ -93,6 +96,7 @@ export const pageQuery = graphql`
                   ...GatsbyImageSharpFluid_withWebp_tracedSVG
                 }
               }
+              publicURL
             }
             tech
             github
@@ -104,7 +108,7 @@ export const pageQuery = graphql`
     }
     projects: allMarkdownRemark(
       filter: {
-        fileAbsolutePath: { regex: "/projects/" }
+        fileAbsolutePath: { regex: "/content/projects/" }
         frontmatter: { showInProjects: { ne: false } }
       }
       sort: { fields: [frontmatter___date], order: DESC }
@@ -121,6 +125,8 @@ export const pageQuery = graphql`
         }
       }
     }
+
+
     contact: allMarkdownRemark(filter: { fileAbsolutePath: { regex: "/contact/" } }) {
       edges {
         node {

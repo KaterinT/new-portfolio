@@ -8,7 +8,6 @@ import { FormattedIcon } from '@components/icons';
 import styled from 'styled-components';
 import { theme, mixins, media, Section, Button } from '@styles';
 const { colors, fontSizes, fonts } = theme;
-
 const StyledContainer = styled(Section)`
   ${mixins.flexCenter};
   flex-direction: column;
@@ -79,7 +78,7 @@ const StyledFolder = styled.div`
 `;
 const StyledProjectLinks = styled.div`
   margin-right: -10px;
-  color: ${colors.lightSlate};
+  color: ${colors.green};
 `;
 const StyledIconLink = styled.a`
   position: relative;
@@ -114,7 +113,7 @@ const StyledTechList = styled.ul`
   li {
     font-family: ${fonts.SFMono};
     font-size: ${fontSizes.xs};
-    color: ${colors.green};
+    color: ${colors.lightSlate};
     line-height: 1.75;
     margin-right: 15px;
     &:last-of-type {
@@ -127,6 +126,7 @@ const StyledMoreButton = styled(Button)`
 `;
 
 const Projects = ({ data }) => {
+ 
   const [showMore, setShowMore] = useState(false);
   const revealTitle = useRef(null);
   const revealArchiveLink = useRef(null);
@@ -138,9 +138,14 @@ const Projects = ({ data }) => {
     revealProjects.current.forEach((ref, i) => sr.reveal(ref, srConfig(i * 100)));
   }, []);
 
-  const GRID_LIMIT = 9;
+  
+
+  const GRID_LIMIT = 3;
   const projects = data.filter(({ node }) => node);
+  console.log('kate1', data);
+ 
   const firstSix = projects.slice(0, GRID_LIMIT);
+
   const projectsToShow = showMore ? projects : firstSix;
 
   return (
@@ -218,6 +223,7 @@ const Projects = ({ data }) => {
 
       <StyledMoreButton onClick={() => setShowMore(!showMore)}>
         Show {showMore ? 'Less' : 'More'}
+
       </StyledMoreButton>
     </StyledContainer>
   );
@@ -225,6 +231,7 @@ const Projects = ({ data }) => {
 
 Projects.propTypes = {
   data: PropTypes.array.isRequired,
+  
 };
 
 export default Projects;

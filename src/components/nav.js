@@ -16,7 +16,8 @@ const StyledContainer = styled.header`
   position: fixed;
   top: 0;
   padding: 0px 50px;
-  background-color: ${colors.navy};
+  // background-color: ${colors.navy};
+   background-color: ${colors.navyDeg};
   transition: ${theme.transition};
   z-index: 11;
   filter: none !important;
@@ -294,6 +295,7 @@ class Nav extends Component {
                 <CSSTransition classNames={fadeDownClass} timeout={timeout}>
                   <div style={{ transitionDelay: `${isHome ? navLinks.length * 100 : 0}ms` }}>
                     <StyledResumeButton
+                      // href="/resume.pdf"
                       href="/resume.pdf"
                       target="_blank"
                       rel="nofollow noopener noreferrer">
